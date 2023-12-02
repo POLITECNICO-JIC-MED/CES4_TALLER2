@@ -10,10 +10,10 @@ const Menu = () => {
           <Link to="/parqueadero">Parqueadero</Link>
         </li>
         <li>
-          <Link to="/empleados">Empleados</Link>
+          <Link to="/parqueadero/empleados">Empleados</Link>
         </li>
         <li>
-          <Link to="/vehiculos">Vehículos</Link>
+          <Link to="/parqueadero/vehiculos">Vehículos</Link>
         </li>
       </ul>
     </nav>

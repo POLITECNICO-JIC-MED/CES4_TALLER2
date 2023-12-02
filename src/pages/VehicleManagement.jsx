@@ -37,6 +37,7 @@ const VehicleManagement = () => {
       return;
     }
 
+    if(selectedVehicleIndex === null){
     const isLicensePlateExist = employees.some(employee =>
     employee.vehicles && employee.vehicles.some(vehicle => vehicle.licensePlate === licensePlate)
     );
@@ -45,6 +46,7 @@ const VehicleManagement = () => {
     alert('Esta placa ya está registrada. Por favor, ingrese una placa única.');
     return;
     }
+  }
 
     // Crear un nuevo vehículo o actualizar el vehículo existente
     const newVehicle = {
@@ -205,7 +207,16 @@ const VehicleManagement = () => {
               {employee.vehicles?.map((vehicle, index) => (
                 <li key={index}>
                     <span>Tipo: {vehicle.vehicleType === 'car' ? 'Carro' : 'Moto'}</span>
-                    <span>- Marca: {`${vehicle.brand} - Modelo: ${vehicle.model} - Placa: ${vehicle.licensePlate}`}</span>
+                    <span>- Marca: {`${vehicle.brand}`}</span>
+                    {vehicle.vehicleType === 'car' ? (
+                      <span>- Modelo: {vehicle.model}</span>
+                    ) : (
+                      <>
+                        <span>- Cilindraje: {vehicle.cylinder}</span>
+                        <span>- Modelo: {vehicle.model}</span>
+                      </>
+                    )}
+                    <span>- Placa: {vehicle.licensePlate}</span>
                   <button onClick={() => handleEditVehicle(employee.id, index)}>Editar</button>
                   <button onClick={() => handleDeleteVehicle(employee.id, index)}>Eliminar</button>
                 </li>
