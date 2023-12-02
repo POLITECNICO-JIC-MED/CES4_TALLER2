@@ -1,0 +1,86 @@
+/* VehicleManagement.module.css */
+
+.vehicleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .vehicleForm {
+    max-width: 300px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .vehicleForm label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .vehicleForm select,
+  .vehicleForm input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.vehicleForm button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.vehicleForm button:hover {
+  background-color: #2980b9;
+}
+
+.vehicleList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 600px;
+  }
+  
+  .vehicleList > li {
+    margin-top: 20px;
+  }
+  
+  .vehicleList > li > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .vehicleList > li > ul > li {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .vehicleList > li > ul > li button {
+    margin-left: 5px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .vehicleList > li > ul > li button:hover {
+    background-color: #c0392b;
+  }

@@ -1,0 +1,26 @@
+nav {
+    background-color: #fdfdfd; /* Color de fondo del menú */
+    padding: 10px; /* Espaciado interior */
+  }
+  
+  ul {
+    list-style-type: none; /* Eliminar los estilos de la lista */
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block; /* Mostrar elementos de lista en línea */
+    margin-right: 20px; /* Espaciado entre elementos */
+  }
+  
+  a {
+    text-decoration: none; /* Eliminar el subrayado de los enlaces */
+    color: rgb(0, 0, 0)14, 144, 144); /* Color del texto del enlace */
+    font-weight: bold; /* Establecer el peso de la fuente */
+    font-size: 16px; /* Tamaño de la fuente */
+  }
+  
+  a:hover {
+    color: #ffcc00; /* Cambiar el color del texto al pasar el mouse */
+  }

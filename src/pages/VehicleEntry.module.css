@@ -1,0 +1,177 @@
+.vehicleEntryContainer {
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.vehicleEntryForm {
+  position: relative; /* Posición relativa para contener los elementos absolutos */
+  width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vehicleEntryLabel {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.vehicleEntryInput {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.vehicleEntryButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.vehicleEntryList {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vehicleEntryList li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.vehicleEntryList li strong {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+/* Estilos para las celdas de parqueadero */
+.parkingSpot {
+  width: 400px; /* Ajusta el ancho según tus necesidades */
+  height: 100px; /* Ajusta la altura según tus necesidades */
+  border: 1px solid #000; /* Borde para visualizar la celda */
+  margin: 5px; /* Espacio entre celdas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para el estado "Disponible" */
+.parkingSpot.available {
+  background-color: green;
+}
+
+/* Estilo para el estado "Ocupado" */
+.parkingSpot.occupied {
+  background-color: red;
+}
+
+.parkingSpotsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carSpotsContainer,
+.motoSpotsContainer {
+  width: 45%; /* Ajusta según tus necesidades */
+}
+
+.motoSpotsContainer {
+  text-align: right;
+}
+
+
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoSection {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Estilos para los botones */
+.occupyButton,
+.releaseButton {
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.occupyButton {
+  background-color: #4caf50; /* Verde */
+  color: white;
+  border: none;
+}
+
+.releaseButton {
+  background-color: #f44336; /* Rojo */
+  color: white;
+  border: none;
+}
+
+/* Estilos adicionales según necesidades */
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-right: 30px;
+}
+
+p {
+  margin: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* Estilos para las etiquetas de texto */
+label {
+  display: block; /* Mostrar en una nueva línea */
+  margin-bottom: 8px; /* Espaciado inferior */
+  font-weight: bold; /* Peso de la fuente */
+}
+
+/* Estilos para los campos de entrada de texto */
+input {
+  width: calc(100% - 20px); /* Ancho calculado para dejar espacio para los botones */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: inline-block; /* Convertir en bloque en línea */
+}
+button {
+
+
+  padding: 10px 15px;
+  border: none;
+
+  cursor: pointer;
+  margin-left: 20px;
+ /* Posición absoluta */
+ /* Espaciado derecho de 20px */
+ /* Centro vertical */
+}
+/* Estilos para los botones */
+

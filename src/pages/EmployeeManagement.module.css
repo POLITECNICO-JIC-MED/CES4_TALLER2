@@ -1,0 +1,82 @@
+/* EmployeeManagement.module.css */
+
+.employeeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .employeeForm {
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .formLabel {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .formInput {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .formButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formButton:hover {
+    background-color: #2980b9;
+  }
+  
+  .employeeList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 600px;
+  }
+  
+  .employeeItem {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 600px;
+  }
+  
+  .employeeActions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .employeeActions button {
+    margin-right: 5px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .employeeActions button:hover {
+    background-color: #c0392b;
+  }
+  
