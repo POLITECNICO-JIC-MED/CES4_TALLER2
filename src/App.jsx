@@ -12,13 +12,25 @@ import Menu from './pages/Menu'
 const App = () => {
   return (
     <Router>
-      <Menu />
-      <Routes>        
+     <Routes>
+        {/* Ruta para la página de inicio de sesión (login) */}
         <Route path="/" element={<Login />} />
-        <Route path="/parqueadero" element={<ParkingManagement />} />
-        <Route path="/empleados" element={<EmployeeManagement />} />
-        <Route path="/vehiculos" element={<VehicleManagement />} />
-        {/* Agrega más rutas según sea necesario */}
+
+        {/* Rutas protegidas con el componente Menu */}
+        <Route
+          path="/parqueadero/*"
+          element={
+            <>
+              <Menu />
+              <Routes>
+                <Route path="/" element={<ParkingManagement />} />
+                <Route path="/empleados" element={<EmployeeManagement />} />
+                <Route path="/vehiculos" element={<VehicleManagement />} />
+                {/* Agrega más rutas según sea necesario */}
+              </Routes>
+            </>
+          }
+        />
       </Routes>
     </Router>
   );
