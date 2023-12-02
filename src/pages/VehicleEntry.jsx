@@ -131,7 +131,7 @@ const VehicleEntry = () => {
      
       <div className={styles.parkingSpotsContainer}>
       <div className={styles.carSpotsContainer}>
-      <h2>Carros</h2>
+      <h2>Motos</h2>
         {availableMotoSpots.map((spot, index) => (
           <ParkingSpot  
             type="motorcycle"
@@ -143,7 +143,7 @@ const VehicleEntry = () => {
         </div>
 
         <div className={styles.motoSpotsContainer}>
-        <h2>Motos</h2>
+        <h2>Carros</h2>
         {availableCarSpots.map((spot, index) => (
           <ParkingSpot  
             type="car"
